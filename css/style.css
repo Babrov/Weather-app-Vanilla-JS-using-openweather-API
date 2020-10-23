@@ -1,0 +1,157 @@
+@import "/css/normalize.css";
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+  background: linear-gradient(45deg, #259ACE 0%, #4DA475 50%, #AAC523 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_city {
+  margin: 25px;
+  border-radius: 10px;
+}
+.input_city label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.input_city button {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 10px;
+}
+.input_city button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.input_city #city {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid white;
+  width: 150px;
+}
+.input_city #city:focus {
+  outline: none;
+}
+.input_city #my_location {
+  margin-top: 10px;
+}
+.input_city #error {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+  border-bottom: 1px solid red;
+}
+
+.current_block {
+  border-radius: 10px;
+  background-color: lightblue;
+  margin: 25px;
+  padding: 5px;
+  max-width: 260px;
+}
+.current_block__city h2 {
+  font-size: 22px;
+  margin: 5px;
+}
+.current_block__icon_temperature {
+  display: flex;
+}
+.current_block__icon_temperature .temperature {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.current_block__weather_date {
+  margin-bottom: 5px;
+}
+.current_block__weather_date a {
+  color: red;
+  text-decoration: none;
+}
+.current_block__weather_date p {
+  margin: 10px;
+}
+.current_block__weather_date .date {
+  margin-left: 10px;
+}
+.current_block__info {
+  border-collapse: collapse;
+}
+.current_block__info td {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: whitesmoke;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.heading {
+  margin-left: 25px;
+}
+
+.days_block {
+  max-width: 500px;
+  width: 100%;
+  margin: 0px 5px 0px 25px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.days_block__header {
+  background-color: lightgoldenrodyellow;
+  padding: 5px;
+}
+.days_block__main {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightblue;
+  border-bottom: 1px solid lightgoldenrodyellow;
+}
+.days_block__main .time_icon {
+  display: flex;
+  align-items: center;
+}
+.days_block__main .time_icon .time {
+  margin-right: 5px;
+}
+.days_block__main .temperature_weather {
+  line-height: 20px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 50px 200px;
+}
+.days_block__main .temperature_weather .temperature {
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  font-size: 14px;
+  color: white;
+  background-color: grey;
+  border-radius: 10px;
+}
+.days_block__main .temperature_weather .weather {
+  margin-left: 20px;
+  font-style: italic;
+}
+.days_block__main .wind_clouds_pressure {
+  line-height: 20px;
+  margin: 0;
+}
