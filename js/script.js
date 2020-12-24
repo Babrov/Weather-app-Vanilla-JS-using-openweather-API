@@ -212,7 +212,7 @@ function forecastDisplay(data){
     daysDisplay(dayTwo);
     daysDisplay(dayThree);
     daysDisplay(dayFour);
-    ddaysDisplay(dayFive);
+    daysDisplay(dayFive);
 }
 
 let form = document.getElementById("form");
