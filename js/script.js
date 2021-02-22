@@ -235,7 +235,7 @@ function getLocation() {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
             }  
-            const apiKey = "05f7911bd80b989d6f1878b5b3f72620";
+            const apiKey = "API KEY";
             const urlCurrent = `
             https://api.openweathermap.org/data/2.5/weather?lat=${pos["lat"]}&lon=${pos["lng"]}&appid=${apiKey}&units=metric`;
             const urlDays = `
